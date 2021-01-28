@@ -65,6 +65,7 @@ class FakeThingType(BaseModel):
         return {
             "thingTypeName": self.thing_type_name,
             "thingTypeId": self.thing_type_id,
+            "thingTypeArn": self.arn,
             "thingTypeProperties": self.thing_type_properties,
             "thingTypeMetadata": self.metadata,
         }

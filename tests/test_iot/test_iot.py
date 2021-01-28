@@ -226,6 +226,7 @@ def test_things():
 
     thing_type = client.describe_thing_type(thingTypeName=type_name)
     thing_type.should.have.key("thingTypeName").which.should.equal(type_name)
+    thing_type.should.have.key("thingTypeArn")
     thing_type.should.have.key("thingTypeProperties")
     thing_type.should.have.key("thingTypeMetadata")
 
